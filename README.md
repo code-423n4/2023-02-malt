@@ -54,7 +54,7 @@ Under "SPONSORS ADD INFO HERE" heading below, include the following:
   - Judge + presort awards: $12,000 USDC
   - Scout awards: $500 USDC
 - Join [C4 Discord](https://discord.gg/code4rena) to register
-- Submit findings [using the C4 form](https://code4rena.com/contests/2023-02-malt-contest/submit)
+- Submit findings [using the C4 form](https://code4rena.com/contests/2023-02-malt-protocol-versus-contest/submit)
 - [Read our guidelines for more details](https://docs.code4rena.com/roles/wardens)
 - Starts February 14, 2023 20:00 UTC
 - Ends February 20, 2023 20:00 UTC
