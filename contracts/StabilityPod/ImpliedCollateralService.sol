@@ -23,7 +23,6 @@ import "../interfaces/IGlobalImpliedCollateralService.sol";
 import "../libraries/uniswap/IUniswapV2Pair.sol";
 import "./PoolCollateral.sol";
 
-import "forge-std/Script.sol";
 
 /// @title Implied Collateral Service
 /// @author 0xScotch <scotch@malt.money>
