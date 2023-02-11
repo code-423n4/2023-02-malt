@@ -1,7 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.11;
 
-import "../../contracts/Token/TransferService.sol";
+import "../contracts/Token/TransferService.sol";
 import "./MaltTest.sol";
 
 contract TransferServiceTest is MaltTest {

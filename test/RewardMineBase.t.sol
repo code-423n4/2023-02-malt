@@ -2,11 +2,11 @@
 pragma solidity ^0.8.11;
 
 import "./MaltTest.sol";
-import "../../contracts/Staking/RewardMineBase.sol";
-import "../../contracts/Staking/Bonding.sol";
-import "../../contracts/Staking/MiningService.sol";
-import "../../contracts/Permissions.sol";
-import "../../contracts/Staking/AbstractRewardMine.sol";
+import "../contracts/Staking/RewardMineBase.sol";
+import "../contracts/Staking/Bonding.sol";
+import "../contracts/Staking/MiningService.sol";
+import "../contracts/Permissions.sol";
+import "../contracts/Staking/AbstractRewardMine.sol";
 import "./DeployedStabilizedPool.sol";
 
 contract RewardMineBaseTest is DeployedStabilizedPool {
