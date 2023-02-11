@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 import "./DeployedStabilizedPool.sol";
-import "../../contracts/RewardSystem/RewardThrottle.sol";
+import "../contracts/RewardSystem/RewardThrottle.sol";
 
 contract RewardThrottleTest is DeployedStabilizedPool {
   using stdStorage for StdStorage;

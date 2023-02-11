@@ -2,21 +2,21 @@
 pragma solidity ^0.8.11;
 
 import "./MaltTest.sol";
-import "../../contracts/StabilizedPoolExtensions/StabilizedPoolUnit.sol";
-import "../../contracts/StabilizedPoolExtensions/AuctionExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/BondingExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/DataLabExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/DexHandlerExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/GlobalICExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/ImpliedCollateralServiceExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/LiquidityExtensionExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/MiningServiceExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/ProfitDistributorExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/RewardOverflowExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/RewardThrottleExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/StabilizerNodeExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/SwingTraderExtension.sol";
-import "../../contracts/StabilizedPoolExtensions/SwingTraderManagerExtension.sol";
+import "../contracts/StabilizedPoolExtensions/StabilizedPoolUnit.sol";
+import "../contracts/StabilizedPoolExtensions/AuctionExtension.sol";
+import "../contracts/StabilizedPoolExtensions/BondingExtension.sol";
+import "../contracts/StabilizedPoolExtensions/DataLabExtension.sol";
+import "../contracts/StabilizedPoolExtensions/DexHandlerExtension.sol";
+import "../contracts/StabilizedPoolExtensions/GlobalICExtension.sol";
+import "../contracts/StabilizedPoolExtensions/ImpliedCollateralServiceExtension.sol";
+import "../contracts/StabilizedPoolExtensions/LiquidityExtensionExtension.sol";
+import "../contracts/StabilizedPoolExtensions/MiningServiceExtension.sol";
+import "../contracts/StabilizedPoolExtensions/ProfitDistributorExtension.sol";
+import "../contracts/StabilizedPoolExtensions/RewardOverflowExtension.sol";
+import "../contracts/StabilizedPoolExtensions/RewardThrottleExtension.sol";
+import "../contracts/StabilizedPoolExtensions/StabilizerNodeExtension.sol";
+import "../contracts/StabilizedPoolExtensions/SwingTraderExtension.sol";
+import "../contracts/StabilizedPoolExtensions/SwingTraderManagerExtension.sol";
 
 // Inherits all the extensions, which will all be tested against this single contract
 contract MyPoolUnit is

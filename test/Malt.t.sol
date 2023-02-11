@@ -2,9 +2,9 @@
 pragma solidity ^0.8.11;
 
 import "forge-std/Test.sol";
-import "../../contracts/Token/Malt.sol";
-import "../../contracts/Token/TransferService.sol";
-import "../../contracts/Repository.sol";
+import "../contracts/Token/Malt.sol";
+import "../contracts/Token/TransferService.sol";
+import "../contracts/Repository.sol";
 
 interface CheatCodes {
   function addr(uint256) external returns (address);

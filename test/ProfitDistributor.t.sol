@@ -2,13 +2,13 @@
 pragma solidity ^0.8.11;
 
 import "./MaltTest.sol";
-import "../../contracts/StabilityPod/ProfitDistributor.sol";
-import "../../contracts/GlobalImpliedCollateralService.sol";
-import "../../contracts/RewardSystem/RewardThrottle.sol";
-import "../../contracts/StabilityPod/LiquidityExtension.sol";
-import "../../contracts/StabilityPod/ImpliedCollateralService.sol";
-import "../../contracts/Auction/Auction.sol";
-import "../../contracts/DataFeed/MaltDataLab.sol";
+import "../contracts/StabilityPod/ProfitDistributor.sol";
+import "../contracts/GlobalImpliedCollateralService.sol";
+import "../contracts/RewardSystem/RewardThrottle.sol";
+import "../contracts/StabilityPod/LiquidityExtension.sol";
+import "../contracts/StabilityPod/ImpliedCollateralService.sol";
+import "../contracts/Auction/Auction.sol";
+import "../contracts/DataFeed/MaltDataLab.sol";
 
 contract ProfitDistributorTest is MaltTest {
   using stdStorage for StdStorage;

@@ -1,11 +1,11 @@
 import "./MaltTest.sol";
-import "../../contracts/StabilizedPool/StabilizedPoolFactory.sol";
-import "../../contracts/StabilizedPool/StabilizedPoolUpdater.sol";
-import "../../contracts/GlobalImpliedCollateralService.sol";
-import "../../contracts/Timekeeper.sol";
-import "../../contracts/libraries/uniswap/IUniswapV2Router02.sol";
-import "../../contracts/libraries/uniswap/IUniswapV2Factory.sol";
-import "../../contracts/DataFeed/MovingAverage.sol";
+import "../contracts/StabilizedPool/StabilizedPoolFactory.sol";
+import "../contracts/StabilizedPool/StabilizedPoolUpdater.sol";
+import "./../contracts/GlobalImpliedCollateralService.sol";
+import "./../contracts/Timekeeper.sol";
+import "./../contracts/libraries/uniswap/IUniswapV2Router02.sol";
+import "./../contracts/libraries/uniswap/IUniswapV2Factory.sol";
+import "./../contracts/DataFeed/MovingAverage.sol";
 
 contract DeployedStabilizedPool is MaltTest {
   using stdStorage for StdStorage;

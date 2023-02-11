@@ -3,9 +3,9 @@ pragma solidity ^0.8.11;
 
 import "./MaltTest.sol";
 import "./DeployedStabilizedPool.sol";
-import "../../contracts/StabilizedPool/StabilizedPoolFactory.sol";
-import "../../contracts/GlobalImpliedCollateralService.sol";
-import "../../contracts/Timekeeper.sol";
+import "../contracts/StabilizedPool/StabilizedPoolFactory.sol";
+import "../contracts/GlobalImpliedCollateralService.sol";
+import "../contracts/Timekeeper.sol";
 
 contract StabilizedPoolFactoryTest is MaltTest {
   using stdStorage for StdStorage;

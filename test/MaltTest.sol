@@ -3,11 +3,11 @@ pragma solidity ^0.8.11;
 
 import "forge-std/Test.sol";
 import "openzeppelin/token/ERC20/ERC20.sol";
-import "../../contracts/Token/Malt.sol";
-import "../../contracts/Token/TransferService.sol";
-import "../../contracts/DataFeed/DualMovingAverage.sol";
-import "../../contracts/DataFeed/MaltDataLab.sol";
-import "../../contracts/Repository.sol";
+import "../contracts/Token/Malt.sol";
+import "../contracts/Token/TransferService.sol";
+import "../contracts/DataFeed/DualMovingAverage.sol";
+import "../contracts/DataFeed/MaltDataLab.sol";
+import "../contracts/Repository.sol";
 
 contract DecimalERC20 is ERC20 {
   uint256 internal _decimals = 18;

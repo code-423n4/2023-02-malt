@@ -2,7 +2,7 @@
 pragma solidity ^0.8.11;
 
 import "./MaltTest.sol";
-import "../../contracts/RewardSystem/LinearDistributor.sol";
+import "../contracts/RewardSystem/LinearDistributor.sol";
 import "./DeployedStabilizedPool.sol";
 
 contract LinearDistributorTest is DeployedStabilizedPool {
