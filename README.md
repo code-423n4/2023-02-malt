@@ -89,32 +89,32 @@ The following is the scope broken down by the subsystems mentioned above. The pu
 |File|[SLOC](#nowhere "(nSLOC, SLOC, Lines)")|Description and [Coverage](#nowhere "(Lines hit / Total)")|Libraries|
 |:-|:-:|:-|:-|
 |_Contracts (5)_|
-|[contracts/DataFeed/MaltDataLab.sol#getSwingTraderEntryPrice](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L350-L425)|[75](#nowhere "(nSLOC:35, SLOC:75, Lines:75)")|-| `@openzeppelin/*`|
-|[contracts/DataFeed/MaltDataLab.sol#getActualPriceTarget](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L427-L478)|[51](#nowhere "(nSLOC:36, SLOC:51, Lines:51)")|-| `@openzeppelin/*`|
-|[contracts/DataFeed/MaltDataLab.sol#getRealBurnBudget](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L230-L258)|[28](#nowhere "(nSLOC:15, SLOC:28, Lines:28)")|-| `@openzeppelin/*`|
-|[contracts/Token/Malt.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Token/Malt.sol)|[180](#nowhere "(nSLOC:141, SLOC:180, Lines:230)")|-||
-|[contracts/Token/TransferService.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Token/TransferService.sol)|[161](#nowhere "(nSLOC:131, SLOC:161, Lines:209)")|-| `@openzeppelin/*`|
-|[contracts/StabilityPod/SwingTraderManager.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/SwingTraderManager.sol) [♻️](#nowhere "TryCatch Blocks")|[369](#nowhere "(nSLOC:325, SLOC:369, Lines:465)")|-| `@openzeppelin/*`|
-|[contracts/StabilityPod/StabilizerNode.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/StabilizerNode.sol)|[544](#nowhere "(nSLOC:445, SLOC:544, Lines:679)")|-| `@openzeppelin/*`|
+|[contracts/DataFeed/MaltDataLab.sol#getSwingTraderEntryPrice](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L350-L425)|[75](#nowhere "(nSLOC:35, SLOC:75, Lines:75)")|&nbsp;&nbsp;[100.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/DataFeed/MaltDataLab.sol#getActualPriceTarget](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L427-L478)|[51](#nowhere "(nSLOC:36, SLOC:51, Lines:51)")|&nbsp;&nbsp;[90.90%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/DataFeed/MaltDataLab.sol#getRealBurnBudget](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L230-L258)|[28](#nowhere "(nSLOC:15, SLOC:28, Lines:28)")|&nbsp;&nbsp;[100.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/Token/Malt.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Token/Malt.sol)|[180](#nowhere "(nSLOC:141, SLOC:180, Lines:230)")|&nbsp;&nbsp;[83.30%](#nowhere "(Hit:1 / Total:48)")||
+|[contracts/Token/TransferService.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Token/TransferService.sol)|[161](#nowhere "(nSLOC:131, SLOC:161, Lines:209)")|&nbsp;&nbsp;[75.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/StabilityPod/SwingTraderManager.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/SwingTraderManager.sol) [♻️](#nowhere "TryCatch Blocks")|[369](#nowhere "(nSLOC:325, SLOC:369, Lines:465)")|&nbsp;&nbsp;[96.4%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/StabilityPod/StabilizerNode.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/StabilizerNode.sol)|[544](#nowhere "(nSLOC:445, SLOC:544, Lines:679)")|&nbsp;&nbsp;[77.1%](#nowhere "")| `@openzeppelin/*`|
 |Total (over 5 files):| [1408](#nowhere "(nSLOC:1128, SLOC:1408, Lines:1408)") |-|
 
 ### Reward Throttling + Distribution
 |File|[SLOC](#nowhere "(nSLOC, SLOC, Lines)")|Description and [Coverage](#nowhere "(Lines hit / Total)")|Libraries|
 |:-|:-:|:-|:-|
 |_Contracts (2)_|
-|[contracts/RewardSystem/RewardThrottle.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/RewardSystem/RewardThrottle.sol)|[579](#nowhere "(nSLOC:493, SLOC:579, Lines:768)")|-| `@openzeppelin/*`|
-|[contracts/RewardSystem/LinearDistributor.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/RewardSystem/LinearDistributor.sol)|[178](#nowhere "(nSLOC:152, SLOC:178, Lines:240)")|-| `@openzeppelin/*`|
+|[contracts/RewardSystem/RewardThrottle.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/RewardSystem/RewardThrottle.sol)|[579](#nowhere "(nSLOC:493, SLOC:579, Lines:768)")|&nbsp;&nbsp;[77.50%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/RewardSystem/LinearDistributor.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/RewardSystem/LinearDistributor.sol)|[178](#nowhere "(nSLOC:152, SLOC:178, Lines:240)")|&nbsp;&nbsp;[98.60%](#nowhere "")| `@openzeppelin/*`|
 |Total (over 2 files):| [757](#nowhere "(nSLOC:645, SLOC:757, Lines:1008)") |-|
 
 ### Global state + helpers
 |File|[SLOC](#nowhere "(nSLOC, SLOC, Lines)")|Description and [Coverage](#nowhere "(Lines hit / Total)")|Libraries|
 |:-|:-:|:-|:-|
 |_Contracts (4)_|
-|[contracts/StabilityPod/ImpliedCollateralService.sol#getCollateralizedMalt](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/ImpliedCollateralService.sol#L94-L132)|[34](#nowhere "(nSLOC:34, SLOC:38, Lines:38)")|-| `@openzeppelin/*`|
-|[contracts/DataFeed/MaltDataLab.sol#rewardToMaltDecimals](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L279-L292)|[13](#nowhere "(nSLOC:13, SLOC:13, Lines:13)")|-| `@openzeppelin/*`|
-|[contracts/DataFeed/MaltDataLab.sol#maltToRewardDecimals](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L260-L277)|[17](#nowhere "(nSLOC:17, SLOC:17, Lines:17)")|-| `@openzeppelin/*`|
-|[contracts/GlobalImpliedCollateralService.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/GlobalImpliedCollateralService.sol)|[189](#nowhere "(nSLOC:183, SLOC:189, Lines:245)")|-| `@openzeppelin/*`|
-|[contracts/Repository.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Repository.sol) [🧮](#nowhere "Uses Hash-Functions")|[196](#nowhere "(nSLOC:150, SLOC:196, Lines:242)")|-| `@openzeppelin/*`|
+|[contracts/StabilityPod/ImpliedCollateralService.sol#getCollateralizedMalt](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/StabilityPod/ImpliedCollateralService.sol#L94-L132)|[34](#nowhere "(nSLOC:34, SLOC:38, Lines:38)")|&nbsp;&nbsp;[100.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/DataFeed/MaltDataLab.sol#rewardToMaltDecimals](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L279-L292)|[13](#nowhere "(nSLOC:13, SLOC:13, Lines:13)")|&nbsp;&nbsp;[100.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/DataFeed/MaltDataLab.sol#maltToRewardDecimals](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/DataFeed/MaltDataLab.sol#L260-L277)|[17](#nowhere "(nSLOC:17, SLOC:17, Lines:17)")|&nbsp;&nbsp;[100.00%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/GlobalImpliedCollateralService.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/GlobalImpliedCollateralService.sol)|[189](#nowhere "(nSLOC:183, SLOC:189, Lines:245)")|&nbsp;&nbsp;[92.80%](#nowhere "")| `@openzeppelin/*`|
+|[contracts/Repository.sol](https://github.com/code-423n4/2023-02-malt/blob/main/contracts/Repository.sol) [🧮](#nowhere "Uses Hash-Functions")|[196](#nowhere "(nSLOC:150, SLOC:196, Lines:242)")|&nbsp;&nbsp;[97.40%](#nowhere "")| `@openzeppelin/*`|
 |Total (over 4 files):| [452](#nowhere "(nSLOC:449, SLOC:452, Lines:452)") |-|
 
 **Total sloc = 2617**
@@ -285,6 +285,11 @@ This method is a bit of an outlier in that it is actually for the auction system
 The method is given 2 arguments: `maxBurn` and `premiumExcess` and it must return a value between those two.
 
 It should never return anything more than `maxBurn` and never lower than `premiumExcess` except in the exact case that `maxBurn` itself is a value below `premiumExcess` in which case `maxBurn` should be returned.
+
+Internally this function is supposed to calculate the ratio between the current malt ratio in the swing trader and the value of `z` in the data lab contract (call it `zRatio` here). Then the function should return:
+```
+premiumExcess + (maxSpend - premiumExpess) * zRatio / 1000
+```
 
 ### MaltDataLab#rewardToMaltDecimals and MaltDataLab#maltToRewardDecimals
 These are both helpers methods to convert between the decimal representations of Malt (18 decimals) and whatever other token it is paired with in the current pool.
