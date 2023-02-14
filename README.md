@@ -85,6 +85,8 @@ The remainder of the scope is taken up by helper contracts that store useful glo
 
 The following is the scope broken down by the subsystems mentioned above. The purposes of each are listed in more detail below.
 
+For the files listed below where specific functions are mentioned, the remainder of the file is out of scope
+
 ### Swing Trader
 |File|[SLOC](#nowhere "(nSLOC, SLOC, Lines)")|Description and [Coverage](#nowhere "(Lines hit / Total)")|Libraries|
 |:-|:-:|:-|:-|
