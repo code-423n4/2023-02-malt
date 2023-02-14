@@ -213,6 +213,7 @@ contract MaltRepository is AccessControl {
     require(_contract != address(0), "0x0");
     bytes32 hashedName = keccak256(abi.encodePacked(_name));
     Contract storage currentContract = globalContracts[hashedName];
+    require(currentContract.contractAddress == address(0), "Contract exists");
     currentContract.contractAddress = _contract;
     currentContract.index = contracts.length;
     contracts.push(_name);
