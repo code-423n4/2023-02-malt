@@ -6,21 +6,7 @@ import "../contracts/RewardSystem/LinearDistributor.sol";
 import "./DeployedStabilizedPool.sol";
 
 contract LinearDistributorTest is DeployedStabilizedPool {
-  LinearDistributor linearDistributor;
-
   function setUp() public {
-    vm.prank(admin);
-    address[] memory admins = new address[](1);
-    admins[0] = admin;
-    repository.setupContracts(
-      timelock,
-      admins,
-      address(malt),
-      address(1),
-      address(transferService),
-      address(1),
-      address(1)
-    );
   }
 
   function testInitialSetup(address randomUser) public {
