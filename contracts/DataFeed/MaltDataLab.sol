@@ -241,7 +241,7 @@ contract MaltDataLab is
         .mul(ABDKMath64x64.fromUInt(100));
       int128 purchaseParityInt = ABDKMath64x64.fromUInt(z);
 
-      if (stMaltRatioInt > purchaseParityInt) {
+      if (stMaltRatioInt >= purchaseParityInt) {
         return maxBurnSpend;
       }
 
@@ -369,6 +369,10 @@ contract MaltDataLab is
      */
     uint256 unity = 10**collateralToken.decimals();
     uint256 icTotal = maltToRewardDecimals(globalIC.collateralRatio());
+
+    if (icTotal == 0) {
+      return 0;
+    }
 
     if (icTotal >= unity) {
       // No need to do math here. Just return priceTarget

@@ -32,7 +32,6 @@ contract SwingTraderManager is
   using SafeERC20 for ERC20;
 
   bytes32 public immutable CAPITAL_DELEGATE_ROLE;
-  bytes32 public immutable MANAGER_ROLE;
 
   mapping(uint256 => SwingTraderData) public swingTraders;
   uint256[] public activeTraders;
@@ -57,7 +56,6 @@ contract SwingTraderManager is
     address poolFactory
   ) StabilizedPoolUnit(timelock, repository, poolFactory) {
     CAPITAL_DELEGATE_ROLE = 0x6b525fb9eaf138d3dc2ac8323126c54cad39e34e800f9605cb60df858920b17b;
-    MANAGER_ROLE = 0x241ecf16d79d0f8dbfb92cbc07fe17840425976cf0667f022fe9877caa831b08;
     _roleSetup(
       0x6b525fb9eaf138d3dc2ac8323126c54cad39e34e800f9605cb60df858920b17b,
       timelock

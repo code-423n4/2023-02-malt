@@ -84,6 +84,12 @@ contract GlobalImpliedCollateralService is Permissions {
 
   function swingTraderCollateralRatio() public view returns (uint256) {
     uint256 decimals = malt.decimals();
+    uint256 totalSupply = malt.totalSupply();
+
+    if (totalSupply == 0) {
+      return 0;
+    }
+
     return (collateral.swingTrader * (10**decimals)) / malt.totalSupply();
   }
 
