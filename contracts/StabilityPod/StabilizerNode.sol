@@ -46,7 +46,6 @@ contract StabilizerNode is
   uint256 public lowerStabilityThresholdBps = 100;
   uint256 public priceAveragePeriod = 5 minutes;
   uint256 public fastAveragePeriod = 30; // 30 seconds
-  uint256 public emergencyMintLookback = 5 minutes;
   uint256 public overrideDistanceBps = 200; // 2%
   uint256 public callerRewardCutBps = 30; // 0.3%
 
@@ -90,7 +89,6 @@ contract StabilizerNode is
   event SetSlippageBps(uint256 _slippageBps);
   event SetSkipAuctionThreshold(uint256 _skipAuctionThreshold);
   event SetEmergencyMintThresholdBps(uint256 thresholdBps);
-  event SetEmergencyMintLookback(uint256 lookback);
   event Tracking();
   event SetTrackingBackoff(uint256 backoff);
   event SetCallerCut(uint256 callerCutBps);
@@ -203,6 +201,7 @@ contract StabilizerNode is
         uint256 latestSample = maltDataLab.maltPriceAverage(0);
         uint256 minThreshold = latestSample -
           (((latestSample - priceTarget) * sampleSlippageBps) / 10000);
+
         require(livePrice < upperBand, "Stabilize: Beyond upper bound");
         require(livePrice > minThreshold, "Stabilize: Slippage threshold");
       }
@@ -590,15 +589,6 @@ contract StabilizerNode is
   {
     preferAuctionThreshold = _preferAuctionThreshold;
     emit SetPreferAuctionThreshold(_preferAuctionThreshold);
-  }
-
-  function setEmergencyMintLookback(uint256 _lookback)
-    external
-    onlyRoleMalt(ADMIN_ROLE, "Must have admin role")
-  {
-    require(_lookback != 0, "Lookback cannot be 0");
-    emergencyMintLookback = _lookback;
-    emit SetEmergencyMintLookback(_lookback);
   }
 
   function setTrackingBackoff(uint256 _backoff)
