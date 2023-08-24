@@ -50,7 +50,7 @@ Each of these methods produce profit. Part of which goes to LP profit share and 
 
 The secret sauce to Malt is that the protocol has the facility to buy back the stablecoin at or below its intrinsic value. This is not possible in more typical mint/redeem stablecoin designs. In those designs the collateral is static and only ever gets traded at its intrinsic value against the stablecoin.
 
-The Malt Swing Trader can purchase Malt below its intrinsic value eg it may spend $0.9 on something it can afford to spend $1 to purchase. This $0.1 delta leaves more collateral relative to the supply it just removed. Thus improving the global collateral ratio for the remaining circulating supply.
+The Malt Swing Trader can purchase Malt below its intrinsic value eg it may spend &#36;0.9 on something it can afford to spend &#36;1 to purchase. This &#36;0.1 delta leaves more collateral relative to the supply it just removed. Thus improving the global collateral ratio for the remaining circulating supply.
 
 There are other parts to the protocol such as the Dutch Auction for Arbitrage Tokens, but they are outside the scope of this audit.
 
@@ -277,7 +277,7 @@ This implements a curve that dictates at what price the swing trader will begin 
 There will also be a video describing this behaviour linked below in the additional context section.
 
 ### MaltDataLab#getActualPriceTarget
-This is related to the above curve in that it dictates what price the swing trader will aim to return the AMM to when it purchases. The default behaviour is to return price back to the $1 peg. However, as internal parameters of the Swing Trader chance (namely, the ratio of Malt to the total capital it holds) the target price will start to drop from $1 towards the current intrinsic value of the collateral. Of course, if we are above 100% collateral then this should always return $1.
+This is related to the above curve in that it dictates what price the swing trader will aim to return the AMM to when it purchases. The default behaviour is to return price back to the &#36;1 peg. However, as internal parameters of the Swing Trader chance (namely, the ratio of Malt to the total capital it holds) the target price will start to drop from &#36;1 towards the current intrinsic value of the collateral. Of course, if we are above 100% collateral then this should always return &#36;1.
 
 This curve is also a function of the same inputs as the `getSwingTraderEntryPrice` curve above. The desmos graph above also implements this curve and the below video will also talk through it further.
 
